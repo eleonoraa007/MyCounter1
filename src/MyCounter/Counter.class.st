@@ -8,6 +8,15 @@ Class {
 }
 
 { #category : #accessing }
+Counter class >> startingAt: anInteger [
+
+	| c |
+	c := Counter new.
+	c count: anInteger. 
+	^ c
+]
+
+{ #category : #accessing }
 Counter >> count [ 
 	
 	^ count 
@@ -35,4 +44,13 @@ Counter >> decrement2 [
 Counter >> increment [ 
 
 	count := count + 1
+]
+
+{ #category : #accessing }
+Counter >> startingAt: anInteger [
+
+	| c |
+	c := Counter new.
+	c count: anInteger. 
+	^ c
 ]
